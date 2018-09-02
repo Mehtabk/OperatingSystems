@@ -1,0 +1,994 @@
+
+
+Thu Nov 12 20:10:16 2015
+Command line: TestDisk
+
+TestDisk 6.14, Data Recovery Utility, July 2013
+Christophe GRENIER <grenier@cgsecurity.org>
+http://www.cgsecurity.org
+OS: Linux, kernel 3.19.0-31-generic (#36-Ubuntu SMP Wed Oct 7 15:04:02 UTC 2015) x86_64
+Compiler: GCC 4.9
+Compilation date: 2015-04-03T09:01:54
+ext2fs lib: 1.42.12, ntfs lib: libntfs-3g, reiserfs lib: none, ewf lib: none
+/dev/sda: LBA, HPA, LBA48, DCO support
+/dev/sda: size       976773168 sectors
+/dev/sda: user_max   976773168 sectors
+/dev/sda: native_max 976773168 sectors
+/dev/sda: dco        976773168 sectors
+Warning: can't get size for Disk /dev/mapper/control - 0 B - 1 sectors, sector size=512
+Hard disk list
+Disk /dev/sda - 500 GB / 465 GiB - CHS 60801 255 63, sector size=512 - ST9500325AS, S/N:S2WAE5JC, FW:0003BSM1
+
+Partition table type (auto): Intel
+Disk /dev/sda - 500 GB / 465 GiB - ST9500325AS
+Partition table type: Intel
+
+Analyse Disk /dev/sda - 500 GB / 465 GiB - CHS 60801 255 63
+Geometry from i386 MBR: head=255 sector=63
+NTFS at 0/32/33
+NTFS at 45/0/1
+NTFS at 15058/14/61
+NTFS at 28113/30/14
+NTFS at 41168/12/61
+get_geometry_from_list_part_aux head=255 nbr=7
+get_geometry_from_list_part_aux head=8 nbr=2
+get_geometry_from_list_part_aux head=16 nbr=2
+get_geometry_from_list_part_aux head=240 nbr=1
+get_geometry_from_list_part_aux head=255 nbr=7
+Current partition structure:
+ 1 * HPFS - NTFS              0  32 33    44 190 18     716800 [System Reserved]
+ 2 P HPFS - NTFS             45   0  1 15057 254 63  241183845
+ 3 E extended LBA         15058  14 59 60801  47 46  734863362
+ 5 L HPFS - NTFS          15058  14 61 28112 254 63  209727633 [Data]
+   X extended             28113   0  1 41167 254 63  209728575
+ 6 L HPFS - NTFS          28113  30 14 41167 254 63  209726672
+   X extended             41168   0  1 54222 254 63  209728575
+ 7 L HPFS - NTFS          41168  12 61 54222 254 63  209727759
+   X extended             54223   0  1 60060   1 37   93771505
+ 8 L Linux                54223  28 14 60060   1 37   93769728
+   X extended             60060   1 38 60801  47 46   11907072
+ 9 L Linux Swap           60060  34  7 60801  47 46   11905024
+
+search_part()
+Disk /dev/sda - 500 GB / 465 GiB - CHS 60801 255 63
+NTFS at 0/32/33
+filesystem size           716800
+sectors_per_cluster       8
+mft_lcn                   29866
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS              0  32 33    44 190 18     716800 [System Reserved]
+     NTFS, blocksize=4096, 367 MB / 350 MiB
+NTFS at 44/190/19
+filesystem size           419428352
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS             44 190 19 26152 243 11  419428352
+     NTFS, blocksize=4096, 214 GB / 199 GiB
+NTFS at 26153/20/44
+filesystem size           241172480
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          26153  20 44 41165  95 18  241172480
+     NTFS, blocksize=4096, 123 GB / 115 GiB
+NTFS at 41165/127/51
+filesystem size           209701736
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          41165 127 51 54218 211 49  209701736
+     NTFS, blocksize=4096, 107 GB / 99 GiB
+NTFS at 54219/137/63
+filesystem size           44292096
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          54219 137 63 56976 152  8   44292096
+     NTFS, blocksize=4096, 22 GB / 21 GiB
+NTFS at 56976/152/9
+filesystem size           61440000
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          56976 152  9 60801  15 14   61440000 [New Volume]
+     NTFS, blocksize=4096, 31 GB / 29 GiB
+
+Results
+     HPFS - NTFS              0  32 33    44 190 18     716800 [System Reserved]
+     NTFS, blocksize=4096, 367 MB / 350 MiB
+     HPFS - NTFS             44 190 19 26152 243 11  419428352
+     NTFS, blocksize=4096, 214 GB / 199 GiB
+     HPFS - NTFS          26153  20 44 41165  95 18  241172480
+     NTFS, blocksize=4096, 123 GB / 115 GiB
+     HPFS - NTFS          41165 127 51 54218 230 28  209702912
+     NTFS, blocksize=4096, 107 GB / 99 GiB
+     HPFS - NTFS          54219 137 63 56976 152  8   44292096
+     NTFS, blocksize=4096, 22 GB / 21 GiB
+     HPFS - NTFS          56976 152  9 60801  15 14   61440000 [New Volume]
+     NTFS, blocksize=4096, 31 GB / 29 GiB
+
+interface_write()
+ 
+No partition found or selected for recovery
+
+search_part()
+Disk /dev/sda - 500 GB / 465 GiB - CHS 60801 255 63
+NTFS at 0/32/33
+filesystem size           716800
+sectors_per_cluster       8
+mft_lcn                   29866
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS              0  32 33    44 190 18     716800 [System Reserved]
+     NTFS, blocksize=4096, 367 MB / 350 MiB
+
+block_group_nr 1
+
+recover_EXT2: "e2fsck -b 32768 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=1/3680, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 120607744
+recover_EXT2: part_size 964861952
+     Linux                    0  32 33 60060   1 37  964861952
+     ext4 blocksize=4096 Large file Sparse superblock Backup superblock, 494 GB / 460 GiB
+NTFS at 44/190/18
+filesystem size           716800
+sectors_per_cluster       8
+mft_lcn                   29866
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS              0  32 33    44 190 18     716800 [System Reserved]
+     NTFS found using backup sector, blocksize=4096, 367 MB / 350 MiB
+NTFS at 44/190/19
+filesystem size           419428352
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS             44 190 19 26152 243 11  419428352
+     NTFS, blocksize=4096, 214 GB / 199 GiB
+NTFS at 45/0/1
+filesystem size           241183845
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS             45   0  1 15057 254 63  241183845
+     NTFS, blocksize=4096, 123 GB / 115 GiB
+NTFS at 15058/14/61
+filesystem size           209727633
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          15058  14 61 28112 254 63  209727633 [Data]
+     NTFS, blocksize=4096, 107 GB / 100 GiB
+NTFS at 28113/30/14
+filesystem size           209726672
+sectors_per_cluster       8
+mft_lcn                   3
+mftmirr_lcn               8738611
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          28113  30 14 41167 254 63  209726672
+     NTFS, blocksize=4096, 107 GB / 100 GiB
+NTFS at 41168/12/61
+filesystem size           209727759
+sectors_per_cluster       8
+mft_lcn                   3
+mftmirr_lcn               8738656
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          41168  12 61 54222 254 63  209727759
+     NTFS, blocksize=4096, 107 GB / 100 GiB
+
+recover_EXT2: s_block_group_nr=0/357, s_mnt_count=52/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 11721216
+recover_EXT2: part_size 93769728
+     Linux                54223  28 14 60060   1 37   93769728
+     ext4 blocksize=4096 Large file Sparse superblock Recover, 48 GB / 44 GiB
+     Linux Swap           60060  34  7 60801  47 30   11905008
+     SWAP2 version 1, pagesize=4096, 6095 MB / 5812 MiB
+NTFS at 60800/254/63
+filesystem size           105673793
+sectors_per_cluster       8
+mft_lcn                   3
+mftmirr_lcn               4403074
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          54223  28 14 60800 254 63  105673793
+     NTFS found using backup sector, blocksize=4096, 54 GB / 50 GiB
+NTFS at 60800/254/63
+filesystem size           105673793
+sectors_per_cluster       8
+mft_lcn                   3
+mftmirr_lcn               4403074
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          60800 254 63 67378 226 49  105673793
+     NTFS, blocksize=4096, 54 GB / 50 GiB
+This partition ends after the disk limits. (start=976768064, size=105673793, end=1082441856, disk end=976773168)
+Search for partition aborted
+Disk /dev/sda - 500 GB / 465 GiB - CHS 60801 255 63
+Check the harddisk size: HD jumpers settings, BIOS detection...
+The harddisk (500 GB / 465 GiB) seems too small! (< 554 GB / 516 GiB)
+The following partition can't be recovered:
+     HPFS - NTFS          60800 254 63 67378 226 49  105673793
+     NTFS, blocksize=4096, 54 GB / 50 GiB
+get_geometry_from_list_part_aux head=255 nbr=2
+get_geometry_from_list_part_aux head=255 nbr=2
+
+Results
+     HPFS - NTFS              0  32 33    44 190 18     716800 [System Reserved]
+     NTFS, blocksize=4096, 367 MB / 350 MiB
+     Linux                    0  32 33 60060   1 37  964861952
+     ext4 blocksize=4096 Large file Sparse superblock Backup superblock, 494 GB / 460 GiB
+     HPFS - NTFS             44 190 19 26152 243 11  419428352
+     NTFS, blocksize=4096, 214 GB / 199 GiB
+     HPFS - NTFS             45   0  1 15057 254 63  241183845
+     NTFS, blocksize=4096, 123 GB / 115 GiB
+     HPFS - NTFS          15058  14 61 28113  30 13  209729536 [Data]
+     NTFS, blocksize=4096, 107 GB / 100 GiB
+     HPFS - NTFS          28113  30 14 41168  12 60  209727488
+     NTFS, blocksize=4096, 107 GB / 100 GiB
+     HPFS - NTFS          41168  12 61 54223  28 13  209729536
+     NTFS, blocksize=4096, 107 GB / 100 GiB
+     Linux                54223  28 14 60060   1 37   93769728
+     ext4 blocksize=4096 Large file Sparse superblock Recover, 48 GB / 44 GiB
+     HPFS - NTFS          54223  28 14 60801  15 14  105674752
+     NTFS found using backup sector, blocksize=4096, 54 GB / 50 GiB
+     Linux Swap           60060  34  7 60801  47 46   11905024
+     SWAP2 version 1, pagesize=4096, 6095 MB / 5813 MiB
+
+interface_write()
+ 
+No partition found or selected for recovery
+simulate write!
+
+write_mbr_i386: starting...
+write_all_log_i386: starting...
+No extended partition
+
+Analyse Disk /dev/sda - 500 GB / 465 GiB - CHS 60801 255 63
+Geometry from i386 MBR: head=255 sector=63
+NTFS at 0/32/33
+NTFS at 45/0/1
+NTFS at 15058/14/61
+NTFS at 28113/30/14
+NTFS at 41168/12/61
+get_geometry_from_list_part_aux head=255 nbr=7
+get_geometry_from_list_part_aux head=8 nbr=2
+get_geometry_from_list_part_aux head=16 nbr=2
+get_geometry_from_list_part_aux head=240 nbr=1
+get_geometry_from_list_part_aux head=255 nbr=7
+Current partition structure:
+ 1 * HPFS - NTFS              0  32 33    44 190 18     716800 [System Reserved]
+ 2 P HPFS - NTFS             45   0  1 15057 254 63  241183845
+ 3 E extended LBA         15058  14 59 60801  47 46  734863362
+ 5 L HPFS - NTFS          15058  14 61 28112 254 63  209727633 [Data]
+   X extended             28113   0  1 41167 254 63  209728575
+ 6 L HPFS - NTFS          28113  30 14 41167 254 63  209726672
+   X extended             41168   0  1 54222 254 63  209728575
+ 7 L HPFS - NTFS          41168  12 61 54222 254 63  209727759
+   X extended             54223   0  1 60060   1 37   93771505
+ 8 L Linux                54223  28 14 60060   1 37   93769728
+   X extended             60060   1 38 60801  47 46   11907072
+ 9 L Linux Swap           60060  34  7 60801  47 46   11905024
+
+search_part()
+Disk /dev/sda - 500 GB / 465 GiB - CHS 60801 255 63
+NTFS at 0/32/33
+filesystem size           716800
+sectors_per_cluster       8
+mft_lcn                   29866
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS              0  32 33    44 190 18     716800 [System Reserved]
+     NTFS, blocksize=4096, 367 MB / 350 MiB
+NTFS at 44/190/19
+filesystem size           419428352
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS             44 190 19 26152 243 11  419428352
+     NTFS, blocksize=4096, 214 GB / 199 GiB
+NTFS at 26152/254/63
+filesystem size           209695465
+sectors_per_cluster       8
+mft_lcn                   3
+mftmirr_lcn               8737311
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          13100  15 36 26152 254 63  209695465
+     NTFS found using backup sector, blocksize=4096, 107 GB / 99 GiB
+NTFS at 26153/20/43
+filesystem size           209713152
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          13099  10 32 26153  20 43  209713152 [New Volume]
+     NTFS found using backup sector, blocksize=4096, 107 GB / 99 GiB
+NTFS at 26153/20/44
+filesystem size           241172480
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          26153  20 44 41165  95 18  241172480
+     NTFS, blocksize=4096, 123 GB / 115 GiB
+NTFS at 41165/127/51
+filesystem size           209701736
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          41165 127 51 54218 211 49  209701736
+     NTFS, blocksize=4096, 107 GB / 99 GiB
+NTFS at 54219/137/62
+filesystem size           209715200
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          41165  95 19 54219 137 62  209715200
+     NTFS found using backup sector, blocksize=4096, 107 GB / 100 GiB
+NTFS at 54219/137/63
+filesystem size           44292096
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          54219 137 63 56976 152  8   44292096
+     NTFS, blocksize=4096, 22 GB / 21 GiB
+NTFS at 56976/152/9
+filesystem size           61440000
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          56976 152  9 60801  15 14   61440000 [New Volume]
+     NTFS, blocksize=4096, 31 GB / 29 GiB
+NTFS at 60801/47/46
+filesystem size           105730048
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          54219 203  1 60801  47 46  105730048
+     NTFS found using backup sector, blocksize=4096, 54 GB / 50 GiB
+get_geometry_from_list_part_aux head=8 nbr=1
+get_geometry_from_list_part_aux head=16 nbr=1
+get_geometry_from_list_part_aux head=32 nbr=1
+get_geometry_from_list_part_aux head=64 nbr=1
+get_geometry_from_list_part_aux head=128 nbr=1
+Warning: the current number of heads per cylinder is 255 but the correct value may be 128.
+
+Results
+   * HPFS - NTFS              0  32 33    44 190 18     716800 [System Reserved]
+     NTFS, blocksize=4096, 367 MB / 350 MiB
+     HPFS - NTFS             44 190 19 26152 243 11  419428352
+     NTFS, blocksize=4096, 214 GB / 199 GiB
+     HPFS - NTFS          13099  10 32 26153  20 43  209713152 [New Volume]
+     NTFS found using backup sector, blocksize=4096, 107 GB / 99 GiB
+     HPFS - NTFS          13100  15 36 26153  20 43  209696768
+     NTFS found using backup sector, blocksize=4096, 107 GB / 99 GiB
+   P HPFS - NTFS          26153  20 44 41165  95 18  241172480
+     NTFS, blocksize=4096, 123 GB / 115 GiB
+     HPFS - NTFS          41165  95 19 54219 137 62  209715200
+     NTFS found using backup sector, blocksize=4096, 107 GB / 100 GiB
+     HPFS - NTFS          41165 127 51 54218 230 28  209702912
+     NTFS, blocksize=4096, 107 GB / 99 GiB
+     HPFS - NTFS          54219 137 63 56976 152  8   44292096
+     NTFS, blocksize=4096, 22 GB / 21 GiB
+     HPFS - NTFS          54219 203  1 60801  47 46  105730048
+     NTFS found using backup sector, blocksize=4096, 54 GB / 50 GiB
+     HPFS - NTFS          56976 152  9 60801  15 14   61440000 [New Volume]
+     NTFS, blocksize=4096, 31 GB / 29 GiB
+
+interface_write()
+ 1 * HPFS - NTFS              0  32 33    44 190 18     716800 [System Reserved]
+ 2 P HPFS - NTFS          26153  20 44 41165  95 18  241172480
+
+search_part()
+Disk /dev/sda - 500 GB / 465 GiB - CHS 60801 255 63
+NTFS at 0/32/33
+filesystem size           716800
+sectors_per_cluster       8
+mft_lcn                   29866
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS              0  32 33    44 190 18     716800 [System Reserved]
+     NTFS, blocksize=4096, 367 MB / 350 MiB
+
+block_group_nr 1
+
+recover_EXT2: "e2fsck -b 32768 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=1/3680, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 120607744
+recover_EXT2: part_size 964861952
+     Linux                    0  32 33 60060   1 37  964861952
+     ext4 blocksize=4096 Large file Sparse superblock Backup superblock, 494 GB / 460 GiB
+NTFS at 44/190/18
+filesystem size           716800
+sectors_per_cluster       8
+mft_lcn                   29866
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS              0  32 33    44 190 18     716800 [System Reserved]
+     NTFS found using backup sector, blocksize=4096, 367 MB / 350 MiB
+NTFS at 44/190/19
+filesystem size           419428352
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS             44 190 19 26152 243 11  419428352
+     NTFS, blocksize=4096, 214 GB / 199 GiB
+NTFS at 45/0/1
+filesystem size           241183845
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS             45   0  1 15057 254 63  241183845
+     NTFS, blocksize=4096, 123 GB / 115 GiB
+NTFS at 15058/14/61
+filesystem size           209727633
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          15058  14 61 28112 254 63  209727633 [Data]
+     NTFS, blocksize=4096, 107 GB / 100 GiB
+NTFS at 28113/30/14
+filesystem size           209726672
+sectors_per_cluster       8
+mft_lcn                   3
+mftmirr_lcn               8738611
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          28113  30 14 41167 254 63  209726672
+     NTFS, blocksize=4096, 107 GB / 100 GiB
+NTFS at 41168/12/61
+filesystem size           209727759
+sectors_per_cluster       8
+mft_lcn                   3
+mftmirr_lcn               8738656
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          41168  12 61 54222 254 63  209727759
+     NTFS, blocksize=4096, 107 GB / 100 GiB
+
+recover_EXT2: s_block_group_nr=0/357, s_mnt_count=52/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 11721216
+recover_EXT2: part_size 93769728
+     Linux                54223  28 14 60060   1 37   93769728
+     ext4 blocksize=4096 Large file Sparse superblock Recover, 48 GB / 44 GiB
+     Linux Swap           60060  34  7 60801  47 30   11905008
+     SWAP2 version 1, pagesize=4096, 6095 MB / 5812 MiB
+NTFS at 60800/254/63
+filesystem size           105673793
+sectors_per_cluster       8
+mft_lcn                   3
+mftmirr_lcn               4403074
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          54223  28 14 60800 254 63  105673793
+     NTFS found using backup sector, blocksize=4096, 54 GB / 50 GiB
+NTFS at 60800/254/63
+filesystem size           105673793
+sectors_per_cluster       8
+mft_lcn                   3
+mftmirr_lcn               4403074
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          60800 254 63 67378 226 49  105673793
+     NTFS, blocksize=4096, 54 GB / 50 GiB
+This partition ends after the disk limits. (start=976768064, size=105673793, end=1082441856, disk end=976773168)
+Search for partition aborted
+Disk /dev/sda - 500 GB / 465 GiB - CHS 60801 255 63
+Check the harddisk size: HD jumpers settings, BIOS detection...
+The harddisk (500 GB / 465 GiB) seems too small! (< 554 GB / 516 GiB)
+The following partition can't be recovered:
+     HPFS - NTFS          60800 254 63 67378 226 49  105673793
+     NTFS, blocksize=4096, 54 GB / 50 GiB
+get_geometry_from_list_part_aux head=255 nbr=2
+get_geometry_from_list_part_aux head=255 nbr=2
+
+Results
+     HPFS - NTFS              0  32 33    44 190 18     716800 [System Reserved]
+     NTFS, blocksize=4096, 367 MB / 350 MiB
+     Linux                    0  32 33 60060   1 37  964861952
+     ext4 blocksize=4096 Large file Sparse superblock Backup superblock, 494 GB / 460 GiB
+     HPFS - NTFS             44 190 19 26152 243 11  419428352
+     NTFS, blocksize=4096, 214 GB / 199 GiB
+     HPFS - NTFS             45   0  1 15057 254 63  241183845
+     NTFS, blocksize=4096, 123 GB / 115 GiB
+     HPFS - NTFS          15058  14 61 28113  30 13  209729536 [Data]
+     NTFS, blocksize=4096, 107 GB / 100 GiB
+     HPFS - NTFS          28113  30 14 41168  12 60  209727488
+     NTFS, blocksize=4096, 107 GB / 100 GiB
+     HPFS - NTFS          41168  12 61 54223  28 13  209729536
+     NTFS, blocksize=4096, 107 GB / 100 GiB
+     Linux                54223  28 14 60060   1 37   93769728
+     ext4 blocksize=4096 Large file Sparse superblock Recover, 48 GB / 44 GiB
+     HPFS - NTFS          54223  28 14 60801  15 14  105674752
+     NTFS found using backup sector, blocksize=4096, 54 GB / 50 GiB
+     Linux Swap           60060  34  7 60801  47 46   11905024
+     SWAP2 version 1, pagesize=4096, 6095 MB / 5813 MiB
+
+interface_write()
+ 
+No partition found or selected for recovery
+simulate write!
+
+write_mbr_i386: starting...
+write_all_log_i386: starting...
+No extended partition
+
+Analyse Disk /dev/sda - 500 GB / 465 GiB - CHS 60801 255 63
+Geometry from i386 MBR: head=255 sector=63
+NTFS at 0/32/33
+NTFS at 45/0/1
+NTFS at 15058/14/61
+NTFS at 28113/30/14
+NTFS at 41168/12/61
+get_geometry_from_list_part_aux head=255 nbr=7
+get_geometry_from_list_part_aux head=8 nbr=2
+get_geometry_from_list_part_aux head=16 nbr=2
+get_geometry_from_list_part_aux head=240 nbr=1
+get_geometry_from_list_part_aux head=255 nbr=7
+Current partition structure:
+ 1 * HPFS - NTFS              0  32 33    44 190 18     716800 [System Reserved]
+ 2 P HPFS - NTFS             45   0  1 15057 254 63  241183845
+ 3 E extended LBA         15058  14 59 60801  47 46  734863362
+ 5 L HPFS - NTFS          15058  14 61 28112 254 63  209727633 [Data]
+   X extended             28113   0  1 41167 254 63  209728575
+ 6 L HPFS - NTFS          28113  30 14 41167 254 63  209726672
+   X extended             41168   0  1 54222 254 63  209728575
+ 7 L HPFS - NTFS          41168  12 61 54222 254 63  209727759
+   X extended             54223   0  1 60060   1 37   93771505
+ 8 L Linux                54223  28 14 60060   1 37   93769728
+   X extended             60060   1 38 60801  47 46   11907072
+ 9 L Linux Swap           60060  34  7 60801  47 46   11905024
+
+search_part()
+Disk /dev/sda - 500 GB / 465 GiB - CHS 60801 255 63
+NTFS at 0/32/33
+filesystem size           716800
+sectors_per_cluster       8
+mft_lcn                   29866
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS              0  32 33    44 190 18     716800 [System Reserved]
+     NTFS, blocksize=4096, 367 MB / 350 MiB
+NTFS at 44/190/19
+filesystem size           419428352
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS             44 190 19 26152 243 11  419428352
+     NTFS, blocksize=4096, 214 GB / 199 GiB
+NTFS at 26152/254/63
+filesystem size           209695465
+sectors_per_cluster       8
+mft_lcn                   3
+mftmirr_lcn               8737311
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          13100  15 36 26152 254 63  209695465
+     NTFS found using backup sector, blocksize=4096, 107 GB / 99 GiB
+NTFS at 26153/20/43
+filesystem size           209713152
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          13099  10 32 26153  20 43  209713152 [New Volume]
+     NTFS found using backup sector, blocksize=4096, 107 GB / 99 GiB
+NTFS at 26153/20/44
+filesystem size           241172480
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          26153  20 44 41165  95 18  241172480
+     NTFS, blocksize=4096, 123 GB / 115 GiB
+NTFS at 41165/127/51
+filesystem size           209701736
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          41165 127 51 54218 211 49  209701736
+     NTFS, blocksize=4096, 107 GB / 99 GiB
+NTFS at 54219/137/62
+filesystem size           209715200
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          41165  95 19 54219 137 62  209715200
+     NTFS found using backup sector, blocksize=4096, 107 GB / 100 GiB
+NTFS at 54219/137/63
+filesystem size           44292096
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          54219 137 63 56976 152  8   44292096
+     NTFS, blocksize=4096, 22 GB / 21 GiB
+NTFS at 56976/152/9
+filesystem size           61440000
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          56976 152  9 60801  15 14   61440000 [New Volume]
+     NTFS, blocksize=4096, 31 GB / 29 GiB
+NTFS at 60801/47/46
+filesystem size           105730048
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          54219 203  1 60801  47 46  105730048
+     NTFS found using backup sector, blocksize=4096, 54 GB / 50 GiB
+get_geometry_from_list_part_aux head=8 nbr=1
+get_geometry_from_list_part_aux head=16 nbr=1
+get_geometry_from_list_part_aux head=32 nbr=1
+get_geometry_from_list_part_aux head=64 nbr=1
+get_geometry_from_list_part_aux head=128 nbr=1
+Warning: the current number of heads per cylinder is 255 but the correct value may be 128.
+
+Results
+   * HPFS - NTFS              0  32 33    44 190 18     716800 [System Reserved]
+     NTFS, blocksize=4096, 367 MB / 350 MiB
+     HPFS - NTFS             44 190 19 26152 243 11  419428352
+     NTFS, blocksize=4096, 214 GB / 199 GiB
+     HPFS - NTFS          13099  10 32 26153  20 43  209713152 [New Volume]
+     NTFS found using backup sector, blocksize=4096, 107 GB / 99 GiB
+     HPFS - NTFS          13100  15 36 26153  20 43  209696768
+     NTFS found using backup sector, blocksize=4096, 107 GB / 99 GiB
+   P HPFS - NTFS          26153  20 44 41165  95 18  241172480
+     NTFS, blocksize=4096, 123 GB / 115 GiB
+     HPFS - NTFS          41165  95 19 54219 137 62  209715200
+     NTFS found using backup sector, blocksize=4096, 107 GB / 100 GiB
+     HPFS - NTFS          41165 127 51 54218 230 28  209702912
+     NTFS, blocksize=4096, 107 GB / 99 GiB
+     HPFS - NTFS          54219 137 63 56976 152  8   44292096
+     NTFS, blocksize=4096, 22 GB / 21 GiB
+     HPFS - NTFS          54219 203  1 60801  47 46  105730048
+     NTFS found using backup sector, blocksize=4096, 54 GB / 50 GiB
+     HPFS - NTFS          56976 152  9 60801  15 14   61440000 [New Volume]
+     NTFS, blocksize=4096, 31 GB / 29 GiB
+
+interface_write()
+ 1 * HPFS - NTFS              0  32 33    44 190 18     716800 [System Reserved]
+ 2 P HPFS - NTFS          26153  20 44 41165  95 18  241172480
+
+search_part()
+Disk /dev/sda - 500 GB / 465 GiB - CHS 60801 255 63
+NTFS at 0/32/33
+filesystem size           716800
+sectors_per_cluster       8
+mft_lcn                   29866
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS              0  32 33    44 190 18     716800 [System Reserved]
+     NTFS, blocksize=4096, 367 MB / 350 MiB
+
+block_group_nr 1
+
+recover_EXT2: "e2fsck -b 32768 -B 4096 device" may be needed
+recover_EXT2: s_block_group_nr=1/3680, s_mnt_count=0/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 120607744
+recover_EXT2: part_size 964861952
+     Linux                    0  32 33 60060   1 37  964861952
+     ext4 blocksize=4096 Large file Sparse superblock Backup superblock, 494 GB / 460 GiB
+NTFS at 44/190/18
+filesystem size           716800
+sectors_per_cluster       8
+mft_lcn                   29866
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS              0  32 33    44 190 18     716800 [System Reserved]
+     NTFS found using backup sector, blocksize=4096, 367 MB / 350 MiB
+NTFS at 44/190/19
+filesystem size           419428352
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS             44 190 19 26152 243 11  419428352
+     NTFS, blocksize=4096, 214 GB / 199 GiB
+NTFS at 45/0/1
+filesystem size           241183845
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS             45   0  1 15057 254 63  241183845
+     NTFS, blocksize=4096, 123 GB / 115 GiB
+NTFS at 15058/14/61
+filesystem size           209727633
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          15058  14 61 28112 254 63  209727633 [Data]
+     NTFS, blocksize=4096, 107 GB / 100 GiB
+NTFS at 28113/30/14
+filesystem size           209726672
+sectors_per_cluster       8
+mft_lcn                   3
+mftmirr_lcn               8738611
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          28113  30 14 41167 254 63  209726672
+     NTFS, blocksize=4096, 107 GB / 100 GiB
+NTFS at 41168/12/61
+filesystem size           209727759
+sectors_per_cluster       8
+mft_lcn                   3
+mftmirr_lcn               8738656
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          41168  12 61 54222 254 63  209727759
+     NTFS, blocksize=4096, 107 GB / 100 GiB
+
+recover_EXT2: s_block_group_nr=0/357, s_mnt_count=52/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 11721216
+recover_EXT2: part_size 93769728
+     Linux                54223  28 14 60060   1 37   93769728
+     ext4 blocksize=4096 Large file Sparse superblock Recover, 48 GB / 44 GiB
+     Linux Swap           60060  34  7 60801  47 30   11905008
+     SWAP2 version 1, pagesize=4096, 6095 MB / 5812 MiB
+NTFS at 60800/254/63
+filesystem size           105673793
+sectors_per_cluster       8
+mft_lcn                   3
+mftmirr_lcn               4403074
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          54223  28 14 60800 254 63  105673793
+     NTFS found using backup sector, blocksize=4096, 54 GB / 50 GiB
+NTFS at 60800/254/63
+filesystem size           105673793
+sectors_per_cluster       8
+mft_lcn                   3
+mftmirr_lcn               4403074
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          60800 254 63 67378 226 49  105673793
+     NTFS, blocksize=4096, 54 GB / 50 GiB
+This partition ends after the disk limits. (start=976768064, size=105673793, end=1082441856, disk end=976773168)
+Search for partition aborted
+Disk /dev/sda - 500 GB / 465 GiB - CHS 60801 255 63
+Check the harddisk size: HD jumpers settings, BIOS detection...
+The harddisk (500 GB / 465 GiB) seems too small! (< 554 GB / 516 GiB)
+The following partition can't be recovered:
+     HPFS - NTFS          60800 254 63 67378 226 49  105673793
+     NTFS, blocksize=4096, 54 GB / 50 GiB
+get_geometry_from_list_part_aux head=255 nbr=2
+get_geometry_from_list_part_aux head=255 nbr=2
+
+Results
+     HPFS - NTFS              0  32 33    44 190 18     716800 [System Reserved]
+     NTFS, blocksize=4096, 367 MB / 350 MiB
+     Linux                    0  32 33 60060   1 37  964861952
+     ext4 blocksize=4096 Large file Sparse superblock Backup superblock, 494 GB / 460 GiB
+     HPFS - NTFS             44 190 19 26152 243 11  419428352
+     NTFS, blocksize=4096, 214 GB / 199 GiB
+     HPFS - NTFS             45   0  1 15057 254 63  241183845
+     NTFS, blocksize=4096, 123 GB / 115 GiB
+     HPFS - NTFS          15058  14 61 28113  30 13  209729536 [Data]
+     NTFS, blocksize=4096, 107 GB / 100 GiB
+     HPFS - NTFS          28113  30 14 41168  12 60  209727488
+     NTFS, blocksize=4096, 107 GB / 100 GiB
+     HPFS - NTFS          41168  12 61 54223  28 13  209729536
+     NTFS, blocksize=4096, 107 GB / 100 GiB
+     Linux                54223  28 14 60060   1 37   93769728
+     ext4 blocksize=4096 Large file Sparse superblock Recover, 48 GB / 44 GiB
+     HPFS - NTFS          54223  28 14 60801  15 14  105674752
+     NTFS found using backup sector, blocksize=4096, 54 GB / 50 GiB
+     Linux Swap           60060  34  7 60801  47 46   11905024
+     SWAP2 version 1, pagesize=4096, 6095 MB / 5813 MiB
+
+interface_write()
+ 
+No partition found or selected for recovery
+simulate write!
+
+write_mbr_i386: starting...
+write_all_log_i386: starting...
+No extended partition
+
+Analyse Disk /dev/sda - 500 GB / 465 GiB - CHS 60801 255 63
+Geometry from i386 MBR: head=255 sector=63
+NTFS at 0/32/33
+NTFS at 45/0/1
+NTFS at 15058/14/61
+NTFS at 28113/30/14
+NTFS at 41168/12/61
+get_geometry_from_list_part_aux head=255 nbr=7
+get_geometry_from_list_part_aux head=8 nbr=2
+get_geometry_from_list_part_aux head=16 nbr=2
+get_geometry_from_list_part_aux head=240 nbr=1
+get_geometry_from_list_part_aux head=255 nbr=7
+Current partition structure:
+ 1 * HPFS - NTFS              0  32 33    44 190 18     716800 [System Reserved]
+ 2 P HPFS - NTFS             45   0  1 15057 254 63  241183845
+ 3 E extended LBA         15058  14 59 60801  47 46  734863362
+ 5 L HPFS - NTFS          15058  14 61 28112 254 63  209727633 [Data]
+   X extended             28113   0  1 41167 254 63  209728575
+ 6 L HPFS - NTFS          28113  30 14 41167 254 63  209726672
+   X extended             41168   0  1 54222 254 63  209728575
+ 7 L HPFS - NTFS          41168  12 61 54222 254 63  209727759
+   X extended             54223   0  1 60060   1 37   93771505
+ 8 L Linux                54223  28 14 60060   1 37   93769728
+   X extended             60060   1 38 60801  47 46   11907072
+ 9 L Linux Swap           60060  34  7 60801  47 46   11905024
+
+search_part()
+Disk /dev/sda - 500 GB / 465 GiB - CHS 60801 255 63
+NTFS at 0/32/33
+filesystem size           716800
+sectors_per_cluster       8
+mft_lcn                   29866
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS              0  32 33    44 190 18     716800 [System Reserved]
+     NTFS, blocksize=4096, 367 MB / 350 MiB
+NTFS at 44/190/19
+filesystem size           419428352
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS             44 190 19 26152 243 11  419428352
+     NTFS, blocksize=4096, 214 GB / 199 GiB
+NTFS at 26152/254/63
+filesystem size           209695465
+sectors_per_cluster       8
+mft_lcn                   3
+mftmirr_lcn               8737311
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          13100  15 36 26152 254 63  209695465
+     NTFS found using backup sector, blocksize=4096, 107 GB / 99 GiB
+NTFS at 26153/20/43
+filesystem size           209713152
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          13099  10 32 26153  20 43  209713152 [New Volume]
+     NTFS found using backup sector, blocksize=4096, 107 GB / 99 GiB
+NTFS at 26153/20/44
+filesystem size           241172480
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          26153  20 44 41165  95 18  241172480
+     NTFS, blocksize=4096, 123 GB / 115 GiB
+NTFS at 41165/127/51
+filesystem size           209701736
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          41165 127 51 54218 211 49  209701736
+     NTFS, blocksize=4096, 107 GB / 99 GiB
+NTFS at 54219/137/62
+filesystem size           209715200
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          41165  95 19 54219 137 62  209715200
+     NTFS found using backup sector, blocksize=4096, 107 GB / 100 GiB
+NTFS at 54219/137/63
+filesystem size           44292096
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          54219 137 63 56976 152  8   44292096
+     NTFS, blocksize=4096, 22 GB / 21 GiB
+NTFS at 56976/152/9
+filesystem size           61440000
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          56976 152  9 60801  15 14   61440000 [New Volume]
+     NTFS, blocksize=4096, 31 GB / 29 GiB
+NTFS at 60801/47/46
+filesystem size           105730048
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     HPFS - NTFS          54219 203  1 60801  47 46  105730048
+     NTFS found using backup sector, blocksize=4096, 54 GB / 50 GiB
+get_geometry_from_list_part_aux head=8 nbr=1
+get_geometry_from_list_part_aux head=16 nbr=1
+get_geometry_from_list_part_aux head=32 nbr=1
+get_geometry_from_list_part_aux head=64 nbr=1
+get_geometry_from_list_part_aux head=128 nbr=1
+Warning: the current number of heads per cylinder is 255 but the correct value may be 128.
+
+Results
+   * HPFS - NTFS              0  32 33    44 190 18     716800 [System Reserved]
+     NTFS, blocksize=4096, 367 MB / 350 MiB
+     HPFS - NTFS             44 190 19 26152 243 11  419428352
+     NTFS, blocksize=4096, 214 GB / 199 GiB
+     HPFS - NTFS          13099  10 32 26153  20 43  209713152 [New Volume]
+     NTFS found using backup sector, blocksize=4096, 107 GB / 99 GiB
+     HPFS - NTFS          13100  15 36 26153  20 43  209696768
+     NTFS found using backu

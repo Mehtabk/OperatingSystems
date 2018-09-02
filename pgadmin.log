@@ -1,0 +1,6 @@
+ERROR  : 01:17:01 PM: Error: Error connecting to the server: could not translate host name "local host" to address: Name or service not known
+
+ERROR  : 01:17:15 PM: Error: Error connecting to the server: FATAL:  Peer authentication failed for user "mkayani"
+
+ERROR  : 01:17:27 PM: Error: Error connecting to the server: FATAL:  Peer authentication failed for user "postgres"
+
