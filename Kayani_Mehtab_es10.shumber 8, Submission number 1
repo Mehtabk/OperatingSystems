@@ -1,0 +1,10 @@
+#Kayani_Mehtab_es
+#Exercise number 10, Submission number 1
+#Mehtab, Kayani
+#START OF THE SECTION FOR ADDITIONAL COMMENTS
+#this is my very first Bash script
+#END OF THE SECTION FOR ADDITIONAL COMMENTS 
+ls -l / > /tmp/exercise10_output
+ls -l ~ >> /tmp/exercise10_output
+ exit 0 
+

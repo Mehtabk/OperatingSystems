@@ -1,0 +1,13 @@
+Line 1:
+#include <stdio.h>
+Line 2:
+/*this is my first C program*/
+Line 3:
+main ()
+{ printf("C program: Welcome to the Operating System course!
+\
+n");
+
+exit(0);
+Line 6:
+}

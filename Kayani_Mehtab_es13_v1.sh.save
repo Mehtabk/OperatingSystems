@@ -1,0 +1,17 @@
+#Kayani_Mehtab_es13a_v1.sh
+#Exercise number 13a, Submission number 1
+#Mehtab, Kayani
+#START OF THE SECTION FOR ADDITIONAL COMMENTS
+#this is my very first Bash script
+#END OF THE SECTION FOR ADDITIONAL COMMENTS
+  FIRST="Files in the root directory:" 
+echo $FIRST  >> /tmp/output_exercise13
+  ls -l / >> /tmp/output_exercise13
+ SECOND="End of root directory"
+ echo  $SECOND >> /tmp/output_exercise13
+  THIRD="Files in the home directory"
+ echo  $THIRD >> /tmp/output_exercise13
+  ls -l ~ >> /tmp/output_exercise13
+  LAST="End of the home directory files"
+ echo  $LAST  >> /tmp/
+  exit 0
